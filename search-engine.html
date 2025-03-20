@@ -16,8 +16,12 @@
             <a href="about.html">About</a>
             <a href="archives.html">Archives</a>
             <a href="news.html">News</a>
+            <a href="organization.html">Organization</a>
+            <a href="services.html">Services</a>
+            <a href="tools.html">Tools</a>
             <a href="search-engine.html">Search-Engine</a>
         </nav>
+        
         <div class="search-container">
             <div class="search-frame">
                 <input type="text" placeholder="Search the site...">
@@ -33,18 +37,18 @@
 
     <main class="search-engine-content">
         <div class="left-column">
-            <section class="search-info">
+            <section>
                 <h2>Information about Search Engine</h2>
                 <p>OLAC's search engine: <a href="http://search.language-archives.org/">http://search.language-archives.org/</a></p>
                 <p>More info about the engine...</p>
             </section>
 
-            <section class="olac-coverage">
+            <section>
                 <h2>OLAC Coverage</h2>
                 <p>OLAC Archives contain over 300,000 records, covering resources in half of the world's living languages. <a href="#">More statistics on coverage</a></p>
             </section>
 
-            <section class="olac-information">
+            <section>
                 <h2>OLAC Information</h2>
                 <p>Information...</p>
                 <p>More...</p>
@@ -52,8 +56,11 @@
         </div>
 
         <div class="right-column">
-            <div class="map-search-container">
-                <img src="images/Map.png" alt="OLAC World Coverage Map" class="map-image">
+            <div class="world-map-container">
+                <div class="world-map">
+                    <img src="images/Map.png" alt="OLAC World Coverage Map" class="map-image">
+                </div>
+
                 <div class="search-controls">
                     <h2>Find Language Resources</h2>
                     <div class="search-box">
@@ -64,11 +71,21 @@
                             </svg>
                         </button>
                     </div>
+
                     <select class="archive-select">
                         <option>Choose Archive</option>
+                        <option>Archive 1</option>
+                        <option>Archive 2</option>
+                        <option>Archive 3</option>
                     </select>
+
                     <select class="region-select">
                         <option>Choose Region</option>
+                        <option>Africa</option>
+                        <option>Americas</option>
+                        <option>Asia</option>
+                        <option>Europe</option>
+                        <option>Pacific</option>
                     </select>
                 </div>
             </div>
