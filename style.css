@@ -18,6 +18,17 @@ body {
     margin: 0 auto;
 }
 
+
+/* Text Formatting */
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+
 /* Base styles */
 h1 {
     font-family: 'Quicksand', sans-serif;
