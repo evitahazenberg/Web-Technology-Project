@@ -1,4 +1,6 @@
-/* Global Styles */
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -12,19 +14,23 @@ body {
     min-height: 100vh;
 }
 
+/* ==========================================================================
+   Layout & Container Styles
+   ========================================================================== */
 .content-container {
     padding: 20px 40px;
-    /*order is top&bottom, left&right*/
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Base styles */
+/* ==========================================================================
+   Typography & Text Styles
+   ========================================================================== */
+/* Headings */
 h1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 36px;
-    /* line-height: 125%; */
     margin-bottom: 20px;
 }
 
@@ -33,35 +39,45 @@ h2 {
     font-weight: 500;
     font-size: 24px;
     line-height: 125%;
-    /* margin-bottom: 15px; */
     margin: 20px 0 10px;
 }
 
+/* Paragraphs */
 p {
     font-size: 20px;
     line-height: 1.6;
     word-spacing: 0.02em;
 }
 
-/* Link colour */
-/* visited link */
-a:visited {
-    color: purple;
+/* Text Utilities */
+.bold-text {
+    font-weight: bold;
 }
 
-/* unvisited link */
+.italic-text {
+    font-style: italic;
+}
+
+/* ==========================================================================
+   Link Styles
+   ========================================================================== */
 a {
     color: #2910eb;
     text-decoration: none;
-    font-size: 21px;
 }
 
-/* color when hovering */
 a:hover {
     text-decoration: underline;
     color: red;
 }
 
+a:visited {
+    color: purple;
+}
+
+/* ==========================================================================
+   List Styles
+   ========================================================================== */
 ul {
     list-style: none;
 }
@@ -71,7 +87,9 @@ li {
     font-size: 20px;
 }
 
-
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
 /* Top Bar */
 .top-bar {
     width: 100%;
@@ -79,15 +97,17 @@ li {
     position: relative;
     display: flex;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .logo {
     width: 300px;
     height: auto;
     position: absolute;
-    left: 2.5%;
-    top: 100px;
+    left: 35px;
+    top: 10px;
     object-fit: contain;
+    z-index: 0;
 }
 
 .top-bar-text {
@@ -96,7 +116,7 @@ li {
     align-items: center;
     gap: 30px;
     position: absolute;
-    left: 55%;
+    left: 50%;
     transform: translateX(-50%);
     top: calc(50% - 27px);
     white-space: nowrap;
@@ -104,7 +124,8 @@ li {
     justify-content: center;
     padding: 0 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 1100px;
+    z-index: 1;
 }
 
 .top-bar-text a {
@@ -116,6 +137,45 @@ li {
     color: #000000;
     text-align: center;
     letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   Responsive Styles
+   Source: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+   ========================================================================== */
+@media screen and (max-width: 1200px) {
+    .logo {
+        width: 250px;
+        left: 10px;
+    }
+    
+    .top-bar-text {
+        padding-left: 280px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        width: 200px;
+        left: 10px;
+    }
+    
+    .top-bar-text {
+        padding-left: 220px;
+    }
+}
+
+/* ==========================================================================
+   Content Sections
+   ========================================================================== */
+/* Top Info Section */
+.top-info {
+    background: #eceef1;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Search Container */
@@ -152,7 +212,7 @@ li {
     width: 5px;
     height: 36px;
     background: #FFFFFF;
-    border-width: 01px;
+    border-width: 1px;
     border-style: solid;
     border-color: #ffffff;
     margin: 0 10px;
@@ -170,18 +230,17 @@ li {
 }
 
 /* Homepage Styles */
-.homepage-content {
+.column-content {
+    padding: 30px 0px;
     display: flex;
-    padding: 20px 40px;
-    /*order is top&bottom, left&right*/
+    gap: 30px;
     max-width: 1400px;
     margin: 0 auto;
-    gap: 40px;
 }
 
 /* Left Column */
-.left-column {
-    flex: 1.5;
+.left-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -249,7 +308,7 @@ li {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
 }
 
 .right-content section {
@@ -262,18 +321,14 @@ li {
     margin-bottom: 0;
 }
 
-.right-content ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
+/* Email Icon Styles */
 .email-icon {
     position: absolute;
     width: 87px;
     height: 87px;
-    left: 50%;
+    left: 35%;
     transform: translateX(-50%);
-    bottom: -50%;
+    bottom: -70%;
 }
 
 .email-icon svg {
@@ -283,18 +338,11 @@ li {
 }
 
 /* About Page Styles */
-.about-olac {
-    background: #eceef1;
-    border-radius: 30px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
 /* Accordion Styles */
 .accordion-section {
     margin-bottom: 20px;
     border: 5px solid #A7C7E7;
-    border-radius: 30px;
+    border-radius: 25px;
     overflow: hidden;
 }
 
@@ -315,7 +363,6 @@ li {
     position: absolute;
     right: 20px;
     transition: transform 0.3s ease;
-    /* font-size: 24px; */
 }
 
 .accordion-header.active::after {
@@ -347,41 +394,17 @@ li {
     font-size: 20px;
 }
 
-.accordion-content a {
-    color: #2910eb;
-    text-decoration: none;
-    font-size: 21px;
-}
-
-.accordion-content a:hover {
-    text-decoration: underline;
-}
-
 /* Documents Page Styles */
-.documents-intro {
-    background: #eceef1;
-    border-radius: 30px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
 .document-types {
     margin: 30px 0;
 }
 
 .doc-description {
-    color: #666;
+    color: #666666;
     font-size: 16px;
 }
 
 /* Archives Page Styles */
-.participating-archives {
-    background: #eceef1;
-    border-radius: 30px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
 .archive-list {
     margin-top: 40px;
 }
@@ -413,7 +436,8 @@ li {
     text-align: center;
 }
 
-.flag-container {
+/* Verwijder als je geen vlaggen toe gaat voegen */
+/* .flag-container {
     display: flex;
     gap: 10px;
 }
@@ -422,33 +446,31 @@ li {
     width: 40px;
     height: 30px;
     object-fit: contain;
-}
+} */
 
 /* Search-Engine Page Styles */
-.search-engine-content {
-    padding: 20px 40px;
-    display: flex;
-    gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
 .left-column {
-    flex: 1;
+    flex: 1.5;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
+    gap: 15px;
 }
 
 .left-column section {
     background: #eceef1;
     border-radius: 30px;
-    padding: 25px;
+    padding: 25px 20px;
     margin-bottom: 20px;
 }
 
+.left-column section ul {
+    padding-left: 30px;
+    font-size: 18px;
+    list-style-type: disc;
+}
+
 .right-column {
-    flex: 1.5;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -461,9 +483,31 @@ li {
     display: flex;
     align-items: center;
     background: #FFFFFF;
+    border: 1px solid #A7C7E7;
     border-radius: 8px;
     padding: 8px;
+    height: 45px;
+    margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0 0 0 6px;
+    border: none;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.search-box input::placeholder {
+    color: #000000;
+}
+
+.search-box-section p {
+    font-size: 18px;
+    color: #666666;
 }
 
 .archive-select,
@@ -492,7 +536,7 @@ li {
 
 .news-item {
     background: #eceef1;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 25px;
     margin-bottom: 20px;
     position: relative;
@@ -500,25 +544,19 @@ li {
 
 /* Europe Page Styles */
 .country-row {
-    e7c8603c17ce1c26a7c808ed95ebf5b5347efd94 background: #eceef1;
-    border-radius: 30px;
-    padding: 30px;
-    margin-bottom: 30px;
-    border: 5px solid #A7C7E7;
-}
-
-/* Organization Page Styles */
-.organization-item {
     background: #eceef1;
-    border-radius: 30px;
-    padding: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
-.org-link {
-    color: black !important;
-    display: inline;
-    text-decoration: none;
+.accordion-country {
+    padding: 5px 20px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .accordion-country::after {
@@ -556,30 +594,49 @@ li {
     font-size: 20px;
 }
 
-/* Tools Page Styles */
-.email-icon {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 244px;
-    top: 1800px;
-}
-
-.mail-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.mail-icon {
-    width: 29.15px;
-    height: 29.15px;
-}
-
 /* Services Page Styles */
 .services {
     display: flex;
     gap: 20px;
+    max-width: 1400px;
+    margin: 30px auto;
 }
 
-c920136 (Added text to services page) e7c8603c17ce1c26a7c808ed95ebf5b5347efd94
+/* Organization Page Styles */
+.organization-item {
+    background: #eceef1;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.org-link {
+    color: black !important;
+    display: inline;
+    text-decoration: none;
+}
+
+/* Tools Page Styles */
+.email-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Language-pages Styles */
+.language-page-items {
+    background: #eceef1;
+    border-radius: 20px;
+    padding: 5px 30px 20px 30px;
+    margin-bottom: 30px;
+}
+
+.language-page-items p:first-child, .language-page-items p:last-child {
+    padding-top: 20px;
+}
+
+.language-page-items ul {
+    padding-left: 30px;
+    list-style-type: disc;
+}

@@ -3,8 +3,8 @@ regionSelect.addEventListener("change", handleSelectChange);
 
 function handleSelectChange(event) {
   const currentValue = event.target.value;
-  if (currentValue === "Europe") {
-    window.location.href = "europe.html";
+  if (currentValue === "Africa") {
+    window.location.href = "africa.html";
   }
 }
 
