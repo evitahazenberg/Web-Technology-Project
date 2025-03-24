@@ -18,7 +18,6 @@ body {
     margin: 0 auto;
 }
 
-
 /* Text Formatting */
 .bold-text {
     font-weight: bold;
@@ -28,13 +27,11 @@ body {
     font-style: italic;
 }
 
-
 /* Base styles */
 h1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 36px;
-    /* line-height: 125%; */
     margin-bottom: 20px;
 }
 
@@ -43,7 +40,6 @@ h2 {
     font-weight: 500;
     font-size: 24px;
     line-height: 125%;
-    /* margin-bottom: 15px; */
     margin: 20px 0 10px;
 }
 
@@ -171,17 +167,17 @@ li {
 }
 
 /* Homepage Styles */
-.homepage-content {
+.column-content {
+    padding: 30px 0px;
     display: flex;
-    padding: 20px 40px; /*order is top&bottom, left&right*/
+    gap: 30px;
     max-width: 1400px;
     margin: 0 auto;
-    gap: 40px;
 }
 
 /* Left Column */
-.left-column {
-    flex: 1.5;
+.left-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -246,10 +242,10 @@ li {
 
 /* Right Column */
 .right-content {
-    flex: 1;
+    flex: 1.5;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
 }
 
 .right-content section {
@@ -266,15 +262,25 @@ li {
     position: absolute;
     width: 87px;
     height: 87px;
-    left: 50%;
+    left: 35%;
     transform: translateX(-50%);
-    bottom: -50%;
+    bottom: -70%;
 }
 
 .email-icon svg {
     fill: #A7C7E7;
     width: 100%;
     height: 100%;
+}
+
+/* Top-information Styles */
+.top-info {
+    background: #eceef1;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* About Page Styles */
@@ -289,13 +295,13 @@ li {
 .accordion-section {
     margin-bottom: 20px;
     border: 5px solid #A7C7E7;
-    border-radius: 30px;
+    border-radius: 25px;
     overflow: hidden;
 }
 
 .accordion-header {
     background: #FFFFFF;
-    padding: 15px 20px;
+    padding: 5px 20px;
     font-family: 'Quicksand', sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -310,7 +316,6 @@ li {
     position: absolute;
     right: 20px;
     transition: transform 0.3s ease;
-    /* font-size: 24px; */
 }
 
 .accordion-header.active::after {
@@ -342,7 +347,7 @@ li {
     font-size: 20px;
 }
 
-.accordion-content a {
+/* .accordion-content a {
     color: #2910eb;
     text-decoration: none;
     font-size: 21px;
@@ -350,7 +355,7 @@ li {
 
 .accordion-content a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Documents Page Styles */
 .documents-intro {
@@ -365,7 +370,7 @@ li {
 }
 
 .doc-description {
-    color: #666;
+    color: #666666;
     font-size: 16px;
 }
 
@@ -403,30 +408,28 @@ li {
 }
 
 /* Search-Engine Page Styles */
-.search-engine-content {
-    padding: 20px 40px;
-    display: flex;
-    gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
 .left-column {
-    flex: 1;
+    flex: 1.5;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
+    gap: 15px;
 }
 
 .left-column section {
     background: #eceef1;
     border-radius: 30px;
-    padding: 25px;
+    padding: 25px 20px;
     margin-bottom: 20px;
 }
 
+.left-column section ul {
+    padding-left: 30px;
+    font-size: 18px;
+    list-style-type: disc;
+}
+
 .right-column {
-    flex: 1.5;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -439,9 +442,31 @@ li {
     display: flex;
     align-items: center;
     background: #FFFFFF;
+    border: 1px solid #A7C7E7;
     border-radius: 8px;
     padding: 8px;
+    height: 45px;
+    margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0 0 0 6px;
+    border: none;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.search-box input::placeholder {
+    color: #000000;
+}
+
+.search-box-section p {
+    font-size: 18px;
+    color: #666666;
 }
 
 .archive-select,
@@ -473,4 +498,74 @@ li {
     padding: 25px;
     margin-bottom: 20px;
     position: relative;
+}
+
+/* Europe Page Styles */
+.country-row {
+    background: #eceef1;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.accordion-country {
+    padding: 5px 20px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.accordion-country::after {
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-country.active::after {
+    transform: rotate(180deg);
+}
+
+.accordion-country-content {
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.accordion-country-content ul {
+    list-style: disc;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.accordion-country-content li {
+    margin-bottom: 10px;
+}
+
+.accordion-country-content p {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+/* Tools Page Styles */
+.email-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 244px;
+    top: 1800px;
+}
+.mail-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.mail-icon {
+    width: 29.15px;
+    height: 29.15px;
 }

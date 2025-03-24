@@ -21,7 +21,6 @@
             <a href="tools.html">Tools</a>
             <a href="search-engine.html">Search-Engine</a>
         </nav>
-        
         <div class="search-container">
             <div class="search-frame">
                 <input type="text" placeholder="Search the site...">
@@ -35,61 +34,63 @@
         </div>
     </div>
 
-    <main class="search-engine-content">
-        <div class="left-column">
-            <section>
-                <h2>Information about Search Engine</h2>
-                <p>OLAC's search engine: <a href="http://search.language-archives.org/">http://search.language-archives.org/</a></p>
-                <p>More info about the engine...</p>
-            </section>
+    <main class="content-container">
+        <div class="column-content">
+            <div class="left-column">
+                <section>
+                    <h2>Information about Search Engine</h2>
+                    <p>OLAC's search engine: <a href="http://search.language-archives.org/">http://search.language-archives.org/</a></p>
+                    <p>The search engine is based on the <a href="#">OLAC Metadata Schema</a> and the <a href="#">OLAC Metadata Usage Survey</a>.</p>
+                </section>
 
-            <section>
-                <h2>OLAC Coverage</h2>
-                <p>OLAC Archives contain over 300,000 records, covering resources in half of the world's living languages. <a href="#">More statistics on coverage</a></p>
-            </section>
+                <section>
+                    <h2>OLAC Coverage</h2>
+                    <p>OLAC Archives contain over 300,000 records, covering resources in half of the world's living languages. <a href="#">More statistics on coverage</a></p>
+                </section>
 
-            <section>
-                <h2>OLAC Information</h2>
-                <p>Information...</p>
-                <p>More...</p>
-            </section>
-        </div>
+                <section>
+                    <h2>OLAC Information</h2>
+                    <p>The OLAC project is a community-driven effort to create a global registry of language resources. The search engine is a tool that allows users to search for language resources based on their metadata.</p>
+                </section>
+            </div>
 
-        <div class="right-column">
-            <div class="world-map-container">
-                <div class="world-map">
-                    <img src="images/Map.png" alt="OLAC World Coverage Map" class="map-image">
-                </div>
-
-                <div class="search-controls">
-                    <h2>Find Language Resources</h2>
-                    <div class="search-box">
-                        <input type="text" placeholder="Search the site...">
-                        <button class="search-button">
-                            <svg class="search-icon" viewBox="0 0 24 24">
-                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                            </svg>
-                        </button>
+            <div class="right-column">
+                <div class="world-map-container">
+                    <div class="world-map">
+                        <img src="images/Map.png" alt="OLAC World Coverage Map" class="map-image">
                     </div>
 
-                    <select class="archive-select">
-                        <option>Choose Archive</option>
-                        <option>Archive 1</option>
-                        <option>Archive 2</option>
-                        <option>Archive 3</option>
-                    </select>
+                    <div class="search-controls">
+                        <h2>Find Language Resources</h2>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search the site...">
+                            <button class="search-button">
+                                <svg class="search-icon" viewBox="0 0 24 24">
+                                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                                </svg>
+                            </button>
+                        </div>
 
-                    <select class="region-select">
-                        <option>Choose Region</option>
-                        <option>Africa</option>
-                        <option>Americas</option>
-                        <option>Asia</option>
-                        <option>Europe</option>
-                        <option>Pacific</option>
-                    </select>
+                        <select class="archive-select">
+                            <option>Choose Archive</option>
+                            <option>Archive 1</option>
+                            <option>Archive 2</option>
+                            <option>Archive 3</option>
+                        </select>
+
+                        <select class="region-select">
+                            <option>Choose Region</option>
+                            <option>Africa</option>
+                            <option>Americas</option>
+                            <option>Asia</option>
+                            <option><a href="europe.html">Europe</a></option>
+                            <option>Pacific</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="js/region-select.js"></script>
 </body>
 </html> 
