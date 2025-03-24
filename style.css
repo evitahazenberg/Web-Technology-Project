@@ -258,6 +258,11 @@ li {
     margin-bottom: 0;
 }
 
+.right-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
 .email-icon {
     position: absolute;
     width: 87px;
@@ -500,6 +505,7 @@ li {
     position: relative;
 }
 
+<<<<<<< HEAD
 /* Europe Page Styles */
 .country-row {
     background: #eceef1;
@@ -569,3 +575,10 @@ li {
     width: 29.15px;
     height: 29.15px;
 }
+=======
+/* Services Page Styles */
+.services {
+    display: flex;
+    gap: 20px;
+}
+>>>>>>> c920136 (Added text to services page)
