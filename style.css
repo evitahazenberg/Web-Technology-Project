@@ -104,6 +104,7 @@ li {
     width: 200px;
     height: auto;
     position: absolute;
+    left: 30px;
     top: -30px;
     object-fit: contain;
     z-index: 0;
