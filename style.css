@@ -101,11 +101,10 @@ li {
 }
 
 .logo {
-    width: 250px;
+    width: 200px;
     height: auto;
     position: absolute;
-    left: 35px;
-    top: -15px;
+    top: -30px;
     object-fit: contain;
     z-index: 0;
 }
