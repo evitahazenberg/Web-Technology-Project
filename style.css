@@ -101,11 +101,11 @@ li {
 }
 
 .logo {
-    width: 200px;
+    width: 250px;
     height: auto;
     position: absolute;
     left: 30px;
-    top: -30px;
+    top: -20px;
     object-fit: contain;
     z-index: 0;
 }
@@ -413,8 +413,10 @@ li {
     position: relative;
     width: 87px;
     height: 87px;
-    left: -75%;
-    bottom: 15%
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .email-icon svg {
