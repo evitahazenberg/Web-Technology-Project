@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+
+<body>    
     <div class="top-bar">
         <img src="../images/Logo.png" alt="OLAC Logo" class="logo">
         <nav class="top-bar-text">
@@ -35,46 +37,62 @@
     </div>
 
     <main class="content-container">
-        <section class="top-info">
-            <h1>Kelo</h1>
-            <span class="doc-description">ISO 639-3: xel</span>
-        </section>
-
-        <div>
-            <section class="language-page-items">
-                <p>The combined catalog of all OLAC participants contains the following resources that are relevant to this language:</p>
-                    <ul>
-                        <li>Lexical resources</li>
-                        <li>Language descriptions</li>
-                        <li>Other resources about the language</li>
-                    </ul>                    
-            </section>
-
-
-            <section class="language-page-items">
-                <h2>Lexical resources</h2>
-                <p>Kelo Swadesh List. n.a. n.d. The Rosetta Project: A Long Now Foundation Library of Human Language. oai:rosettaproject.org:rosettaproject_xel_swadesh-1</p>
-            </section>
-
-
-            <section class="language-page-items">
-                <h2>Language descriptions</h2>
-                <p>Glottolog 5.1 Resources for Kelo. n.a. 2024. Max Planck Institute for Evolutionary Anthropology. oai:glottolog.org:kelo1246</p>
-            </section>
-
-            <section class="language-page-items">
-                <h2>Other resources about the language</h2>
-                <p>Kelo: a language of Sudan. n.a. 2018. SIL International. oai:ethnologue.com:xel</p>
-            </section>
-
-            <section class="language-page-items">
-                <p class="doc-description">Other known names and dialect names: Beni Sheko, Kelo-Beni Sheko, Ndu-Faa-Keelo, Tornasi<br>
-                Other search terms: dialect, vernacular, lexicon, dictionary, vocabulary, wordlist, phrase book, grammar, syntax, morphology, phonology, orthography<br>
-                Use faceted search to explore resources for Kelo language.</p>
-            </section>
+        <div class="language-intro">
+            <h1>OLAC resources in and about the Kelo language</h1>
+            <p>ISO 639-3: <a href="https://iso639-3.sil.org/code/xel">xel</a></p>
+            <p>The combined catalog of all OLAC participants contains the following resources that are relevant to this
+                language:</p>
+            <ul>
+                <li><a href="#Lexical-resources" class="org-link">Lexical resources</a></li>
+                <li><a href="#Language-descriptions" class="org-link">Language descriptions</a></li>
+                <li><a href="#Other-Resources" class="org-link">Other resources
+                        about the language</a></li>
+            </ul>
+            <p>Other known names and dialect names: Beni Sheko, Kelo-Beni Sheko, Ndu-Faa-Keelo, Tornasi</p>
+            <p>Use faceted search to<a href="#"> explore resources for Kelo language.</a></p>
         </div>
-    </main>
+        <div class="accordion-sections">
+            <section class="Lexical resources accordion-section">
+                <h2 class="accordion-header" id="Lexical-resources">Lexical resources</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Kelo Swadesh List. n.a. n.d. The Rosetta Project: A Long Now Foundation Library of Human
+                            Language. <a
+                                href="http://www.language-archives.org/item/oai:rosettaproject.org:rosettaproject_xel_swadesh-1">oai:rosettaproject.org:rosettaproject_xel_swadesh-1</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
+            <section class="Language descriptions accordion-section">
+                <h2 class="accordion-header" id="Language-descriptions">Language descriptions</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Glottolog 5.1 Resources for Kelo. n.a. 2024. Max Planck Institute for Evolutionary
+                            Anthropology. <a
+                                href="http://www.language-archives.org/item/oai:glottolog.org:kelo1246">oai:glottolog.org:kelo1246</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="Other resources about the language accordion-section">
+                <h2 class="accordion-header" id="Other-Resources">Other resources about the language</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Kelo: a language of Sudan. n.a. 2018. SIL International. <a
+                                href="http://www.language-archives.org/item/oai:ethnologue.com:xel">oai:ethnologue.com:xel</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="language-intro">
+                <p>Other known names and dialect names: Beni Sheko, Kelo-Beni Sheko, Ndu-Faa-Keelo, Tornasi</p>
+                <p>Other search terms: dialect, vernacular, lexicon, dictionary, vocabulary, wordlist, phrase book,
+                    grammar, syntax, morphology, phonology, orthography</p>
+            </div>
+    </main>
     <script src="../js/accordion.js"></script>
 </body>
-</html> 
+
+</html>
