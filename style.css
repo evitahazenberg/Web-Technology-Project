@@ -698,3 +698,12 @@ li {
     padding-left: 30px;
     list-style-type: disc;
 }
+
+/* Kelo-page */
+.kelo-intro {
+    background: #eceef1;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+
+}
