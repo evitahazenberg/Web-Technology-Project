@@ -26,7 +26,7 @@ body {
 /* ==========================================================================
    Typography & Text Styles
    ========================================================================== */
-/* Headings */
+/* Heading styles */
 h1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
@@ -73,6 +73,10 @@ a:hover {
 
 a:visited {
     color: purple;
+}
+
+a:visited:hover {
+    color: red;
 }
 
 /* ==========================================================================
@@ -147,6 +151,14 @@ li {
     position: relative;
 }
 
+.top-bar-text a:hover {
+    color: #000000;
+}
+
+.top-bar-text a:visited {
+    color: #000000;
+}
+
 .top-bar-text a.active {
     text-decoration: underline;
     text-decoration-thickness: 2px;
@@ -195,7 +207,6 @@ li {
 /* ==========================================================================
    Content Sections
    ========================================================================== */
-/* Top Info Section */
 .top-info {
     background: #eceef1;
     border-radius: 30px;
@@ -218,7 +229,9 @@ li {
     width: 80%;
 }
 
-/* Info Buttons */
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
 .info-buttons {
     display: flex;
     gap: 20px;
@@ -257,7 +270,9 @@ li {
     transform: translateY(-2px);
 }
 
-/* Search Container */
+/* ==========================================================================
+   Search Container
+   ========================================================================== */
 .search-container {
     position: absolute;
     right: 30px;
@@ -308,7 +323,9 @@ li {
     height: 29px;
 }
 
-/* Homepage Styles */
+/* ==========================================================================
+   Homepage Styles
+   ========================================================================== */
 .column-content {
     padding: 30px 0px;
     display: flex;
@@ -413,7 +430,7 @@ li {
     position: relative;
     width: 87px;
     height: 87px;
-    left: 50%;
+    left: -50%;
     transform: translateX(-50%);
     margin-top: 15px;
     margin-bottom: 20px;
@@ -425,7 +442,9 @@ li {
     height: 100%;
 }
 
-/* About Page Styles */
+/* ==========================================================================
+   About Page Styles
+   ========================================================================== */
 /* Accordion Styles */
 .accordion-section {
     margin-bottom: 20px;
@@ -481,7 +500,9 @@ li {
     font-size: 18px;
 }
 
-/* Documents Page Styles */
+/* ==========================================================================
+   Documents Page Styles
+   ========================================================================== */
 .document-types {
     margin: 30px 0;
 }
@@ -491,7 +512,9 @@ li {
     font-size: 15px;
 }
 
-/* Archives Page Styles */
+/* ==========================================================================
+   Archives Page Styles
+   ========================================================================== */
 .archive-list {
     margin-top: 40px;
 }
@@ -528,7 +551,9 @@ li {
     transform: translateY(-2px);
 }
 
-/* Search-Engine Page Styles */
+/* ==========================================================================
+   Search-Engine Page Styles
+   ========================================================================== */
 .left-column {
     flex: 1.5;
     display: flex;
@@ -601,7 +626,9 @@ li {
     font-size: 15px;
 }
 
-/* News Page Styles */
+/* ==========================================================================
+   News Page Styles
+   ========================================================================== */
 .news-intro {
     background: #eceef1;
     border-radius: 30px;
@@ -622,7 +649,9 @@ li {
     position: relative;
 }
 
-/* Europe Page Styles */
+/* ==========================================================================
+   Europe Page Styles
+   ========================================================================== */
 .country-row {
     background: #eceef1;
     margin-bottom: 20px;
@@ -673,7 +702,9 @@ li {
     font-size: 18px;
 }
 
-/* Organization Page Styles */
+/* ==========================================================================
+   Organization Page Styles
+   ========================================================================== */
 .organization-item {
     background: #eceef1;
     border-radius: 20px;
@@ -687,7 +718,9 @@ li {
     text-decoration: none;
 }
 
-/* Tools Page Styles */
+/* ==========================================================================
+   Tools Page Styles
+   ========================================================================== */
 .email-button {
     background: none;
     border: none;
@@ -695,7 +728,9 @@ li {
     font-size: 24px;
 }
 
-/* Continent Pages */
+/* ==========================================================================
+   Continent Pages
+   ========================================================================== */
 .language-intro {
     background: #eceef1;
     border-radius: 30px;
